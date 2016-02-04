@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    tools:context="edu.umkc.cm7cd.WeatherStatus.MainActivity"
+    android:background="@drawable/weather">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/login_text"
+        android:id="@+id/textView.loginPage"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/username_text"
+        android:id="@+id/textView.uname"
+        android:layout_marginTop="113dp"
+        android:layout_below="@+id/textView.loginPage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/password_text"
+        android:id="@+id/textView2.pswd"
+        android:layout_below="@+id/textView.uname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText.uname"
+        android:layout_above="@+id/textView2.pswd"
+        android:layout_alignLeft="@+id/textView.loginPage"
+        android:layout_alignStart="@+id/textView.loginPage" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText2.pswd"
+        android:layout_below="@+id/textView.uname"
+        android:layout_alignLeft="@+id/editText.uname"
+        android:layout_alignStart="@+id/editText.uname" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_button"
+        android:id="@+id/button.login"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="152dp"
+        android:onClick="loginCredentials"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:id="@+id/button.reset"
+        android:onClick="resetData"
+        android:layout_alignTop="@+id/button.login"
+        android:layout_alignLeft="@+id/editText2.pswd"
+        android:layout_alignStart="@+id/editText2.pswd" />
+
+
+</RelativeLayout>

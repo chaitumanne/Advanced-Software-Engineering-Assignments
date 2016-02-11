@@ -69,11 +69,11 @@
         android:layout_height="wrap_content"
         android:text="@string/login_button"
         android:id="@+id/button.login"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="152dp"
-        android:onClick="loginCredentials"/>
+        android:onClick="loginCredentials"
+        android:layout_below="@+id/editText2.pswd"
+        android:layout_alignRight="@+id/textView.uname"
+        android:layout_alignEnd="@+id/textView.uname"
+        android:layout_marginTop="129dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -82,8 +82,18 @@
         android:id="@+id/button.reset"
         android:onClick="resetData"
         android:layout_alignTop="@+id/button.login"
-        android:layout_alignLeft="@+id/editText2.pswd"
-        android:layout_alignStart="@+id/editText2.pswd" />
+        android:layout_toRightOf="@+id/textView2.pswd"
+        android:layout_toEndOf="@+id/textView2.pswd" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:id="@+id/button"
+        android:onClick="newUser"
+        android:layout_alignTop="@+id/button.reset"
+        android:layout_toRightOf="@+id/button.reset"
+        android:layout_toEndOf="@+id/button.reset" />
 
 
 </RelativeLayout>

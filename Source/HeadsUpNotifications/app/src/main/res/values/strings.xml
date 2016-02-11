@@ -12,4 +12,19 @@
     <string name="checkWeatherText">Check your weather status</string>
     <string name="enterCity">Enter City</string>
     <string name="checkButton">Check</string>
+    <string name="register">Register?</string>
+    <string name="title_activity_register">Registration</string>
+    <string name="lastName">Last Name</string>
+    <string name="firstName">First Name</string>
+    <string name="signUpButton">Create Account</string>
+    <string name="loginLink">Already a member? Login</string>
+    <string name="emailID">Email</string>
+    <string name="password">Password</string>
+    <string name="signUp">Sign Up</string>
+    <string name="image">image</string>
+    <string name="address">Address</string>
+    <string name="userName">User Name</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="home">Press below for your current location</string>
+    <string name="title_activity_current_location">Home</string>
 </resources>

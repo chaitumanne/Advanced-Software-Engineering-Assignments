@@ -1,4 +1,4 @@
-package edu.umkc.cm7cd.headsupnotifications;
+package edu.umkc.cm7cd.WeatherStatus;
 
 import org.junit.Test;
 

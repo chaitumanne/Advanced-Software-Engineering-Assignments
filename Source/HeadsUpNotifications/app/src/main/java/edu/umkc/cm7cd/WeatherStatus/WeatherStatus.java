@@ -18,7 +18,6 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.util.Date;
 
-import edu.umkc.cm7cd.headsupnotifications.R;
 import okhttp3.Call;
 
 import okhttp3.Callback;

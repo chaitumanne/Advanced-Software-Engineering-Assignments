@@ -14,8 +14,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import edu.umkc.cm7cd.headsupnotifications.R;
-
 public class MainActivity extends AppCompatActivity {
     private static EditText username;
     private static EditText password;
@@ -83,5 +81,10 @@ public class MainActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.editText2_pswd);
         username.setText("");
         password.setText("");
+    }
+
+    public void newUser(View view){
+        Intent intent= new Intent(MainActivity.this,RegisterActivity.class);
+        startActivity(intent);
     }
 }

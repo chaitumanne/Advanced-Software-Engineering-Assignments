@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Super Market</title>
+    <script src="http://www.SupermarketAPI.com/api.asmx/SearchByProductName?APIKEY=236a7ba5f9&ItemName=Parsley"></script>
+</head>
+<body>
+<div ng-controller="ctrl">
+    <input id="origin-input" class="controls" type="text" ng-keydown="findMarket()"
+           placeholder="Search Location">
+    <input id="destination-input" class="control" type="text" ng-keydown="checkWeather()"
+           placeholder="Find Directions">
+</div>
+</body>
+</html>

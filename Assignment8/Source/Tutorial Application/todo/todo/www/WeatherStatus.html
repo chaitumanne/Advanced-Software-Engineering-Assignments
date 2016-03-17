@@ -1,0 +1,60 @@
+<html data-ng-app="weather">
+<head>
+    <meta charset="UTF-8">
+    <title>Super Market</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js" type="application/javascript"></script>
+    <script src="js/WeatherService.js"></script>
+    <style type="text/css">
+        .weather1{
+                font-size: 1.5rem;
+                left: 45%;
+                position: absolute;
+                background-size: auto;
+                padding: 1em;
+                bottom: 5%;
+                top: 20%;
+            }
+            /*.weather2{
+                left: 85%;
+                font-size: 1.5rem;
+                position: absolute;
+                background-size: auto;
+                padding: 1em;
+                bottom: 5%;
+            }*/
+        .weatherlayout{
+                left:70%;
+                height: 100%;
+            }
+    </style>
+</head>
+<body>
+    <br/>
+<div ng-controller="ctrl">
+    <div class="main">
+		<div class="search">
+			<form>
+				<input id="cityName" type="text" value="Enter city name" onfocus="this.value = '';"onblur="if (this.value == '') {this.value = 'Enter city name';}">
+				<input type="submit" value="Find" ng-click="checkWeather()">
+				<div class="clear"></div>
+			</form>
+		</div>
+    </div>
+    <div class="weatherlayout" id="weatherStatus" style="display: none">
+            <div class="weather1"><p class="cityname1">{{sourceCity}}</p>
+                <p>{{sourceTempid}} &#8457</p>
+                <p>{{sourceWindSpeed}} w/h</p>
+                <p>{{sourceDesc }}  <img class="icon" ng-src="http://openweathermap.org/img/w/{{sourceIcon}}.png"></p>
+            </div>
+
+            <!--<div class="weather2"><p class="cityname1">{{DestinationCity}}</p>
+                <p>{{DestinationTempid}} &#8457</p>
+                <p>{{DestinationWindSpeed}} w/h</p>
+                <p>{{DestinationDesc}}  <img class="icon" ng-src="http://openweathermap.org/img/w/{{DestinationIcon}}.png"></p>
+            </div>-->
+        </div>
+    
+</div>
+</body>
+</html>
